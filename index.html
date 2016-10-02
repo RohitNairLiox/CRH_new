@@ -15,7 +15,7 @@ body, html {
 }
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
     opacity: 0.7;
     background-attachment: fixed;
     background-position: center;
@@ -25,19 +25,27 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-    background-image: url('http://crhmumbai.org/main.jpg');
+    background-image: url('image/main-compressed.jpg');
     min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-    background-image: url("1.jpg");
+    background-image: url("image/1-compressed.jpg");
+    min-height: 400px;
+}
+.bgimg-3 {
+    background-image: url("image/photo2.jpg");
+    min-height: 400px;
+}
+.bgimg-4 {
+    background-image: url("image/ganesh.jpg");
     min-height: 400px;
 }
 
-/* Third image (Contact) */
-.bgimg-3 {
-    background-image: url("http://www.w3schools.com/w3css/img_parallax3.jpg");
+/* Fifth image (Contact) */
+.bgimg-5 {
+    background-image: url("image/8-compressed.jpg");
     min-height: 400px;
 }
 
@@ -53,7 +61,7 @@ body, html {
 
 /* Turn off parallax scrolling for tablets and mobiles */
 @media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
         background-attachment: scroll;
     }
 }
@@ -90,7 +98,7 @@ body, html {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-section">
       <p><b>Community Children's program</b></p><br>
-      <img src="http://crhmumbai.org/8.jpg" style="max-height:235px; max-width:235px;" class="w3-circle" alt="Community Children">
+      <img src="image/8-compressed.jpg" style="max-height:235px; max-width:235px;" class="w3-circle" alt="Community Children">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -105,7 +113,7 @@ body, html {
 <!-- Second Parallax Image with Portfolio Text -->
 <div class="bgimg-2 w3-display-container">
   <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">BHERAMPADA</span>
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">BHERAMPADA</span>
   </div>
 </div>
 
@@ -117,25 +125,25 @@ body, html {
   <div class="w3-row w3-center">
 
 	  	<div class="w3-col m3 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod01').style.display='block'">
-		  	<img src="2.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
+		  	<img src="image/2-compressed.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
 		  <div class="w3-container w3-center">
 		    <p>Setting up a Balwadi <br> (Local Study-centre)</p>
 		  </div>
 	  	</div>
 	  	<div class="w3-col m3 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod02').style.display='block'">
-	  	<img src="1.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
+	  	<img src="image/1-compressed.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
 	  <div class="w3-container w3-center">
 	    <p> Doorstep Banking <br> (Mamta Patphedi)</p>
 	  </div>
 	  	</div>
 	 <div class="w3-col m3 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod03').style.display='block'">
-	  	<img src="1.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
+	  	<img src="image/feature3-compressed.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
 	  <div class="w3-container w3-center">
 	    <p> Educational Sponsership <br> (Individual Sponsership)</p>
 	  </div>
 	  	</div>
 	   	<div class="w3-col m3 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod04').style.display='block'">
-	   	<img src="capture.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
+	   	<img src="capture-min.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
 	  <div class="w3-container w3-center">
 	    <p> Umang Mahila Tailors <br> Visit: <a href="http://umangmahilatailors.org" class="w3-text-blue" style="text-decoration:none;" title="Visit Umang Mahila Tailors" target="_blank">umangmahilatailors.org</a></p>
 	  </div>
@@ -221,51 +229,42 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/1-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/2-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/3-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/5-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/featured1-compressed.jpg" style="height:163px;width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/12-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/13-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/10-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
 </div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" style="max-width:100%">
-  </div>
-</div>
-
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container">
+<div class="bgimg-3 w3-display-container">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">WALIV</span>
   </div>
@@ -279,13 +278,13 @@ body, html {
   <div class="w3-row-padding w3-center">
 
 	  	<div class="w3-col m6 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod05').style.display='block'">
-		  	<img src="2.jpg" class="w3-hover-opacity" style="height:235px; width: 92%;" alt="Norway">
+		  	<img src="image/photo5.jpg" class="w3-hover-opacity" style="height:235px; width: 92%;" alt="Norway">
 		  <div class="w3-container w3-center">
 		    <p>Issues pertaining to Migrants </p>
 		  </div>
 	  	</div>
 	  	<div class="w3-col m6 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod06').style.display='block'">
-	  	<img src="1.jpg" class="w3-hover-opacity" style="height:235px; width: 92%;" alt="Norway">
+	  	<img src="image/school.jpg" class="w3-hover-opacity" style="height:235px; width: 92%;" alt="Norway">
 	  <div class="w3-container w3-center">
 	    <p> School Adoption</p>
 	  </div>
@@ -300,7 +299,7 @@ body, html {
     <header class="w3-container w3-blue-grey">
       <span onclick="document.getElementById('mod05').style.display='none'"
       class="w3-closebtn">&times;</span>
-      <h2>Local Study Centre</h2>
+      <h2>Migrant Issues</h2>
     </header>
     <div class="w3-container">
       <p>Some text..</p>
@@ -316,7 +315,7 @@ body, html {
     <header class="w3-container w3-blue-grey">
       <span onclick="document.getElementById('mod06').style.display='none'"
       class="w3-closebtn">&times;</span>
-      <h2>Doorstep Banking</h2>
+      <h2>School Adoption</h2>
     </header>
     <div class="w3-container">
       <p>Some text..</p>
@@ -340,52 +339,42 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/1-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/2-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/3-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/5-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/1-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/2-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/3-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/5-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
-  </div>
+  </div> 	
 </div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" style="max-width:100%">
-  </div>
-</div>
-
-
 <!-- Fourth Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container">
+<div class="bgimg-4 w3-display-container">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">GANESHPURI</span>
   </div>
@@ -399,7 +388,7 @@ body, html {
   <div class="w3-row-padding w3-center">
 
 	  	<div class="w3-col w3-container w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod07').style.display='block'">
-		  	<img src="2.jpg" class="w3-hover-opacity" style="height:240px; width: 90%;" alt="Norway">
+		  	<img src="image/skillDev.jpg" class="w3-hover-opacity" style="height:240px; width: 90%;" alt="Norway">
 		  <div class="w3-container w3-center">
 		    <p> Centre for the disabled <br> (Skill development &amp; job placement) </p>
 		  </div>
@@ -438,53 +427,36 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/2-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/2-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/3-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
 
     <div class="w3-col m3">
-      <img src="http://crhmumbai.org/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="image/5-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
     </div>
   </div>
 
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="http://crhmumbai.org/1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="http://crhmumbai.org/2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="http://crhmumbai.org/3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="http://crhmumbai.org/5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
-    </div>
-  </div>
 </div>
 
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">&times;</span>
   <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
     <img id="img01" style="max-width:100%">
   </div>
 </div>
-
+<!-- Modal for full size images on click ENDS-->
 
 
 <!-- Fifth Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container">
+<div class="bgimg-5 w3-display-container">
   <div class="w3-display-middle">
      <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
   </div>
