@@ -66,19 +66,27 @@ body, html {
     }
 }
 .pointerIcon{cursor:pointer;}
+#sub_Email{display: block;
+             margin : 0 auto;}
 </style>
-<body>
+<body onload="setTimeout(mySubscribe, 200)">
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <ul class="w3-navbar" id="myNavbar">
-    <li><a href="#" class="w3-padding-large w3-white w3-animate-opacity w3-hover-opacity"><span id="titleText">HOME</span></a></li>
+  	<li class="w3-hide-large w3-hide-medium w3-white w3-hover-light-grey">
+  	<div class="w3-dropdown-hover">
+  		<button class="w3-btn w3-light-grey w3-hover-red"><i class="fa fa-heart-o" style="font-size:24px;" aria-hidden="true"></i></button>
+  		  <div class="w3-dropdown-content w3-border">
+		    <a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-indigo"><i class="fa fa-facebook-official" style="font-size:28px;"></i></a>
+		    <a href="https://plus.google.com/107948113188601627750" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-google-plus-square" style="font-size:28px;"></i></a>
+		  </div>
+  	</div>
+  	</li>
+    <li><a href="#" class="w3-padding-large w3-white w3-animate-opacity w3-hover-light-grey"><span id="titleText"><span class="w3-hide-small"><img src="image/crh_logo.jpg" style="width: 50px" alt="CRH Logo"></span> <span class="w3-hide-large">Committee for the Right to Housing</span> <span class="w3-hide-medium w3-hide-small"> CRH Mumbai</span></span></a></li>
     <li class="w3-hide-small w3-right"><a href="https://plus.google.com/107948113188601627750" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-google-plus-square" style="font-size:28px;"></i></a></li>
     <li class="w3-hide-small w3-right">
       <a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-indigo"><i class="fa fa-facebook-official" style="font-size:28px;"></i></a>
-    </li>
-    <li class="w3-hide-small w3-right">
-      <a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-amber"><i class="fa fa-rss-square" style="font-size:28px;"></i></a>
     </li>
   </ul>
 </div>
@@ -93,7 +101,7 @@ body, html {
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">ABOUT CRH</h3>
-  <p class="w3-center"><em>"Serving Humanity where it matters the most"</em></p>
+  <p class="w3-center w3-serif w3-xlarge"><em>"Serving Humanity where it matters the most"</em></p>
   <p><big style="font-family: Georgia, Serif;font-weight: bold;">CRH</big> believes that housing is a basic human right, which is very closely related to right to life guaranteed by the Indian Constitution under Article 21. It believes that processes of development that result in involuntary displacement of people should be questioned and resisted. In urban areas where displacement is rampant it becomes very necessary to assert the rights of the poor. CRH through its multiprong strategies works at the grassroots level in association with CBOs, NGOs and with the communities aiming at political and human right education while searching for an alternative for establishing a right to the city, a right to participate and a right to govern. CRH also comprises of a network of organizations supporting them in making solid understanding about housing rights, educating them through training programme and helping them at the time of crisis.</p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-section">
@@ -291,7 +299,9 @@ body, html {
 	  	</div>
 
   </div>
-  
+  <style type="text/css">
+  	iframe {max-width:100%;}
+  </style>
 
 <!-- The Modals begin -->
  <div id="mod05" class="w3-modal w3-center">
@@ -319,7 +329,11 @@ body, html {
     </header>
     <div class="w3-container">
       <p>Some text..</p>
-      <p>Some text..</p>
+      <div class="w3-row">
+      <div class="w3-col">
+      <iframe src="https://www.youtube.com/embed/OXRTCI2DCmQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+      </div>
     </div>
     <footer class="w3-container w3-teal">
       <p>Modal Footer</p>
@@ -479,25 +493,46 @@ body, html {
         <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: sarathchandran@gmail.com<br>
       </div>
       <p>Come over to see our activities, or let us get back to you:</p>
+  <form action="php/Contact_request.php" method="post">
       <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
         <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+          <input class="w3-input w3-border w3-hover-light-grey" name="Name" type="text" placeholder="Name" required>
         </div>
         <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+          <input class="w3-input w3-border w3-hover-light-grey" name="Email" type="email" placeholder="Email" required>
         </div>
       </div>
-      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
-      <button class="w3-btn w3-section w3-right">SEND</button>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" name="Message" placeholder="Comment" required>
+      <button type="submit" class="w3-btn w3-section w3-right">SEND</button>
+   </form>
     </div>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
-  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+  <p><span class="w3-left"><a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-indigo"><i class="fa fa-facebook-official" style="font-size:28px;"></i></a><a href="https://plus.google.com/107948113188601627750" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-google-plus-square" style="font-size:28px;"></i></a></span>
+  Theme <span class="w3-hide-small">Developed</span> by <a href="http://devrohitnair.tk" target="_blank">Rohit Nair</a> <br>
+  Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
+
 </footer>
- 
+<!-- Subscribe Modal -->
+ <div id="modal08" class="w3-modal w3-card-2">
+  <div class="w3-modal-content">
+    <div class="w3-center">
+      <span onclick="document.getElementById('modal08').style.display='none'"
+      class="w3-closebtn w3-hover-red">&times;</span>
+      <h3 class="w3-container w3-red">Subscribe</h3>
+      <p class="w3-serif w3-large">You'll Recieve Occasional Newletters..</p>
+      <form action="php/subscribe.php" method="post">
+     <p> <input type="email" id="sub_Email" name="Email" placeholder="Enter Your Email ID" style="max-width:80%; align-self: inherit;" class="w3-input w3-border w3-hover-light-grey w3-center" required/> </p>
+     <p> <button class="w3-btn w3-hover-red" type="submit">Subscribe <i class="fa fa-heart-o"></i></button> </p>
+     </form>
+     <br>
+      
+    </div>
+  </div>
+</div>
 <!-- Add Google Maps -->
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC15tzcjUQtVrBDUNQWFv-Z3tRr5jmUf3I&callback=mapProp"></script>
 <script>
@@ -523,6 +558,10 @@ marker.setMap(map);
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
+function mySubscribe() {
+	document.getElementById("modal08").style.display = "block";
+}
+
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -539,6 +578,7 @@ function myFunction() {
     else {
         navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
     }
+
  }
 
 	
