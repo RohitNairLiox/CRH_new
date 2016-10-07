@@ -4,89 +4,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
-    opacity: 0.7;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('image/main-compressed.jpg');
-    min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-    background-image: url("image/1-compressed.jpg");
-    min-height: 400px;
-}
-.bgimg-3 {
-    background-image: url("image/photo2-min.jpg");
-    min-height: 400px;
-}
-.bgimg-4 {
-    background-image: url("image/ganesh-min.jpg");
-    min-height: 400px;
-}
-
-/* Fifth image (Contact) */
-.bgimg-5 {
-    background-image: url("image/8-compressed.jpg");
-    min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-#googleMap {
-    width: 100%;
-    height: 400px;
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%);
-}
-
-/* Turn off parallax scrolling for tablets and mobiles */
-@media only screen and (max-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-        background-attachment: scroll;
-    }
-}
-.pointerIcon{cursor:pointer;}
-#sub_Email{display: block;
-             margin : 0 auto;}
-</style>
 <body onload="setTimeout(mySubscribe, 200)">
-
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <ul class="w3-navbar" id="myNavbar">
   	<li class="w3-hide-large w3-hide-medium w3-white w3-hover-light-grey">
   	<div class="w3-dropdown-hover">
-  		<button class="w3-btn w3-light-grey w3-hover-red"><i class="fa fa-heart-o" style="font-size:24px;" aria-hidden="true"></i></button>
+  		<button class="w3-btn w3-light-grey w3-hover-red"><img src="https://s6.postimg.org/89smvryb5/crh_logo_google.jpg" class="Logo" alt="CRH Logo"></button>
   		  <div class="w3-dropdown-content w3-border">
-		    <a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-indigo"><i class="fa fa-facebook-official" style="font-size:28px;"></i></a>
-		    <a href="https://plus.google.com/107948113188601627750" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-google-plus-square" style="font-size:28px;"></i></a>
+        <a href="https://www.youtube.com/channel/UCRoHQXXfgazJ3yRmzfH3wuw" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-youtube-play myIcon"></i></a>
+		    <a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-indigo"><i class="fa fa-facebook-official myIcon"></i></a>
+		    <a href="https://plus.google.com/107948113188601627750" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-google-plus-square myIcon"></i></a>
 		  </div>
   	</div>
   	</li>
-    <li><a href="#" class="w3-padding-large w3-white w3-animate-opacity w3-hover-light-grey"><span id="titleText"><span class="w3-hide-small"><img src="image/crh_logo.jpg" style="width: 50px" alt="CRH Logo"></span> <span class="w3-hide-large">Committee for the Right to Housing</span> <span class="w3-hide-medium w3-hide-small"> CRH Mumbai</span></span></a></li>
-    <li class="w3-hide-small w3-right"><a href="https://plus.google.com/107948113188601627750" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-google-plus-square" style="font-size:28px;"></i></a></li>
+    <li><a href="#" class="w3-padding-large w3-white w3-animate-opacity w3-hover-light-grey"><span id="titleText"><span class="w3-hide-small"><img src="https://s6.postimg.org/89smvryb5/crh_logo_google.jpg" class="Logo" alt="CRH Logo"></span> <span class="w3-hide-large">Committee for the Right to Housing</span> <span class="w3-hide-medium w3-hide-small"> CRH Mumbai</span></span></a></li>
+    <li class="w3-hide-small w3-right"><a href="https://plus.google.com/107948113188601627750" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-google-plus-square myIcon"></i></a></li>
     <li class="w3-hide-small w3-right">
-      <a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-indigo"><i class="fa fa-facebook-official" style="font-size:28px;"></i></a>
+      <a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-indigo"><i class="fa fa-facebook-official myIcon"></i></a>
+    </li>
+    <li class="w3-hide-small w3-right">
+      <a href="https://www.youtube.com/channel/UCRoHQXXfgazJ3yRmzfH3wuw" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-youtube-play myIcon" ></i></a></span>
     </li>
   </ul>
 </div>
@@ -106,7 +46,7 @@ body, html {
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-section">
       <p><b>Community Children's program</b></p><br>
-      <img src="image/8-compressed.jpg" style="max-height:235px; max-width:235px;" class="w3-circle" alt="Community Children">
+      <img src="https://s6.postimg.org/anx304epd/8_compressed.jpg" style="max-height:235px; max-width:235px;" class="w3-circle" alt="Community Children">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -133,25 +73,25 @@ body, html {
   <div class="w3-row w3-center">
 
 	  	<div class="w3-col m3 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod01').style.display='block'">
-		  	<img src="image/2-compressed.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
+		  	<img src="https://s6.postimg.org/q99t6c19t/2_compressed.jpg" class="w3-hover-opacity myActivityImage" style="width: 98%;" alt="Balwadi Program">
 		  <div class="w3-container w3-center">
 		    <p>Setting up a Balwadi <br> (Local Study-centre)</p>
 		  </div>
 	  	</div>
 	  	<div class="w3-col m3 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod02').style.display='block'">
-	  	<img src="image/1-compressed.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
+	  	<img src="https://s6.postimg.org/71i2vztkh/1_compressed.jpg" class="w3-hover-opacity myActivityImage" style="width: 98%;" alt="Doorstep Banking">
 	  <div class="w3-container w3-center">
 	    <p> Doorstep Banking <br> (Mamta Patphedi)</p>
 	  </div>
 	  	</div>
 	 <div class="w3-col m3 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod03').style.display='block'">
-	  	<img src="image/feature3-compressed.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
+	  	<img src="https://s6.postimg.org/7317gwa5t/feature3_compressed.jpg" class="w3-hover-opacity myActivityImage" style="width: 98%;" alt="Educational Sponsership">
 	  <div class="w3-container w3-center">
 	    <p> Educational Sponsership <br> (Individual Sponsership)</p>
 	  </div>
 	  	</div>
 	   	<div class="w3-col m3 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod04').style.display='block'">
-	   	<img src="capture-min.jpg" class="w3-hover-opacity" style="height:235px; width: 98%;" alt="Norway">
+	   	<img src="https://s6.postimg.org/j2cpo7fqp/Capture_min.jpg" class="w3-hover-opacity myActivityImage" style="width: 98%;" alt="Umang Mahila Tailors">
 	  <div class="w3-container w3-center">
 	    <p> Umang Mahila Tailors <br> Visit: <a href="http://umangmahilatailors.org" class="w3-text-blue" style="text-decoration:none;" title="Visit Umang Mahila Tailors" target="_blank">umangmahilatailors.org</a></p>
 	  </div>
@@ -237,37 +177,37 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="image/1-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/71i2vztkh/1_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/2-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/q99t6c19t/2_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/3-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/ows44g3u9/3_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/5-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/hxe2533w1/5_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
   </div>
 
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="image/featured1-compressed.jpg" style="height:163px;width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/5pe5zc0a9/featured1_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/12-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/5udbv9i7l/12_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/13-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/sx3uufjox/13_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/10-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/b38ct50mp/10_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
   </div>
 </div>
@@ -286,23 +226,19 @@ body, html {
   <div class="w3-row-padding w3-center">
 
 	  	<div class="w3-col m6 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod05').style.display='block'">
-		  	<img src="image/photo5-min.jpg" class="w3-hover-opacity" style="height:235px; width: 92%;" alt="Norway">
+		  	<img src="https://s6.postimg.org/rkvt3ehyp/photo5_min.jpg" class="w3-hover-opacity myActivityImage" style="width: 92%;" alt="Migrant Program">
 		  <div class="w3-container w3-center">
 		    <p>Issues pertaining to Migrants </p>
 		  </div>
 	  	</div>
 	  	<div class="w3-col m6 w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod06').style.display='block'">
-	  	<img src="image/school.jpg" class="w3-hover-opacity" style="height:235px; width: 92%;" alt="Norway">
+	  	<img src="https://s6.postimg.org/8htle4whd/1_min.jpg" class="w3-hover-opacity myActivityImage" style="width: 92%;" alt="School Adoption Program">
 	  <div class="w3-container w3-center">
 	    <p> School Adoption</p>
 	  </div>
 	  	</div>
 
   </div>
-  <style type="text/css">
-  	iframe {max-width:100%;}
-  </style>
-
 <!-- The Modals begin -->
  <div id="mod05" class="w3-modal w3-center">
   <div class="w3-modal-content">
@@ -353,37 +289,37 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="image/1-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/71i2vztkh/1_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/2-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/q99t6c19t/2_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/3-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/ows44g3u9/3_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/5-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/hxe2533w1/5_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
   </div> 
 
     <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="image/1-min.jpg" style="width:100%; height:162px;" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/mn3ztouwh/6_min.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/3-min.jpg" style="width:100%; height:162px;" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/btwhl6dm9/3_min.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/5-min.jpg" style="width:100%; height:162px;" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/hxe2533w1/5_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/4-min.jpg" style="width:100%; height:162px;" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/yjvme5wtt/4_min.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
   </div>	
 </div>
@@ -402,7 +338,7 @@ body, html {
   <div class="w3-row-padding w3-center">
 
 	  	<div class="w3-col w3-container w3-card-2 w3-light-grey pointerIcon" onclick="document.getElementById('mod07').style.display='block'">
-		  	<img src="image/skillDev.jpg" class="w3-hover-opacity" style="height:240px; width: 90%;" alt="Norway">
+		  	<img src="https://s6.postimg.org/pizx2w9dd/skillDev.jpg" class="w3-hover-opacity myActivityImage" style="width: 90%;" alt="Centre for the disabled">
 		  <div class="w3-container w3-center">
 		    <p> Centre for the disabled <br> (Skill development &amp; job placement) </p>
 		  </div>
@@ -441,21 +377,21 @@ body, html {
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="w3-row-padding w3-center">
     <div class="w3-col m3">
-      <img src="image/2-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/71i2vztkh/1_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/2-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/q99t6c19t/2_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/3-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/ows44g3u9/3_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
 
     <div class="w3-col m3">
-      <img src="image/5-compressed.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <img src="https://s6.postimg.org/hxe2533w1/5_compressed.jpg" onclick="onClick(this)" class="w3-hover-opacity myImages">
     </div>
-  </div>
+  </div> 
 
 </div>
 
@@ -479,7 +415,7 @@ body, html {
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64">
   <h3 class="w3-center">WHERE I WORK</h3>
-  <p class="w3-center"><em>I'd love your feedback!</em></p>
+  <p class="w3-center"><em>We would love to connect with you!</em></p>
 
   <div class="w3-row w3-padding-32 w3-section">
     <div class="w3-col m4 w3-container">
@@ -488,31 +424,32 @@ body, html {
     </div>
     <div class="w3-col m8 w3-container w3-section">
       <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Mumbai, IN<br>
-        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +91 9969520439<br>
-        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: sarathchandran@gmail.com<br>
+        <i class="fa fa-map-marker w3-hover-text-black contactIcon"></i> Mumbai, IN<br>
+        <i class="fa fa-phone w3-hover-text-black contactIcon"></i> Phone: +91 9969520439<br>
+        <i class="fa fa-envelope w3-hover-text-black contactIcon"> </i> Email: sarathchandran@gmail.com<br>
       </div>
       <p>Come over to see our activities, or let us get back to you:</p>
-  <form action="php/Contact_request.php" method="post">
+  <form id="contact_Form">
       <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
         <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" name="Name" type="text" placeholder="Name" required>
+          <input class="w3-input w3-border w3-hover-light-grey" id="Con_Name" name="Name" type="text" placeholder="Name" required>
         </div>
         <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" name="Email" type="email" placeholder="Email" required>
+          <input class="w3-input w3-border w3-hover-light-grey" id="Con_Email" name="Email" type="email" placeholder="Email" required>
         </div>
       </div>
-      <input class="w3-input w3-border w3-hover-light-grey" type="text" name="Message" placeholder="Comment" required>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" id="Con_Message" name="Message" placeholder="Comment" required>
       <button type="submit" class="w3-btn w3-section w3-right">SEND</button>
    </form>
     </div>
+    <div id="contactDisplay" class="w3-panel-2 w3-right"></div>
   </div>
 </div>
 
 <!-- Footer -->
 <footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
-  <p><span class="w3-left"><a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-indigo"><i class="fa fa-facebook-official" style="font-size:28px;"></i></a><a href="https://plus.google.com/107948113188601627750" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-google-plus-square" style="font-size:28px;"></i></a></span>
-  Theme <span class="w3-hide-small">Developed</span> by <a href="http://devrohitnair.tk" target="_blank">Rohit Nair</a> <br>
+  <p><span class="w3-left"><a href="https://www.youtube.com/channel/UCRoHQXXfgazJ3yRmzfH3wuw" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-youtube-play myIcon"></i></a><a href="https://www.facebook.com/Committee-for-the-right-to-housing-C-R-H--198035316893210/" target="_blank" class="w3-padding-large w3-hover-indigo"><i class="fa fa-facebook-official myIcon"></i></a><span class="w3-hide-medium w3-hide-large"><br><br></span><a href="https://plus.google.com/107948113188601627750" target="_blank" class="w3-padding-large w3-hover-red"><i class="fa fa-google-plus-square myIcon"></i></a></span>
+  Theme <span class="w3-hide-small">Developed</span> by <a href="http://devrohitnair.tk" target="_blank" class="w3-hover-opacity">Rohit Nair</a> <br>
   Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p>
 
 </footer>
@@ -520,23 +457,30 @@ body, html {
  <div id="modal08" class="w3-modal w3-card-2">
   <div class="w3-modal-content">
     <div class="w3-center">
-      <span onclick="document.getElementById('modal08').style.display='none'"
+      <span style="padding:2px; padding-right:5px;" onclick="document.getElementById('modal08').style.display='none'"
       class="w3-closebtn w3-hover-red">&times;</span>
-      <h3 class="w3-container w3-red">Subscribe</h3>
-      <p class="w3-serif w3-large">You'll Recieve Occasional Newletters..</p>
-      <form action="php/subscribe.php" method="post">
+      <h3 class="w3-container w3-dark-grey w3-hover-black">Subscribe</h3>
+      <p class="w3-serif w3-large">Stay Connected by following CRHs Activities...<span class="w3-hide-large"><br></span> We won't spam you / share any of your details  <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+      <form id="subscribe_Form">
      <p> <input type="email" id="sub_Email" name="Email" placeholder="Enter Your Email ID" style="max-width:80%; align-self: inherit;" class="w3-input w3-border w3-hover-light-grey w3-center" required/> </p>
-     <p> <button class="w3-btn w3-hover-red" type="submit">Subscribe <i class="fa fa-heart-o"></i></button> </p>
+     <p> <button class="w3-btn w3-hover-red w3-ripple" type="submit" id="subscribe_Submit">Subscribe <i class="fa fa-heart-o"></i></button> </p>
+     <span id="resultDisplay"><br></span>
      </form>
-     <br>
+     
       
     </div>
   </div>
 </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- Adding all js files -->
+<script src="js/support.js"></script>
 <!-- Add Google Maps -->
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC15tzcjUQtVrBDUNQWFv-Z3tRr5jmUf3I&callback=mapProp"></script>
-<script>
-var myCenter = new google.maps.LatLng(19.058678, 72.844376);
+<script src="js/subscribe_Submit.js"></script>
+<script src="js/contact_Submit.js"></script>
+
+<script type="text/javascript">
+  var myCenter = new google.maps.LatLng(19.058678, 72.844376);
 
 function initialize() {
 var mapProp = {
@@ -558,31 +502,6 @@ marker.setMap(map);
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-function mySubscribe() {
-	document.getElementById("modal08").style.display = "block";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-navbar" + " w3-card-2" + " w3-animate-top" + " w3-white";
-    } 
-    else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
-    }
-
- }
-
-	
 </script>
-
 </body>
 </html>

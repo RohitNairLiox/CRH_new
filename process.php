@@ -24,12 +24,6 @@ else {
 	$emailResponse = "<div class='w3-panel w3-green'>
   <p><strong>Subscribed!</strong> <span class='w3-hide-large'><br></span> Now You'll recieve our occasional Updates and Newletters</p>
 </div>  ";
-
-$to = "sarathchandran@crhmumbai.org, sarathvalia@gmail.com";
-		$subject = "Subscribers list - CRH Mumbai";
-		$content = "Subscribers Email ID - " . $email;
-		$headers = "From: contact@crhmumbai.org";
-	mail($to,$subject,$content,$headers);
 }
 }
 echo $emailResponse;

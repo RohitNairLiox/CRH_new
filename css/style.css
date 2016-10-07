@@ -1,0 +1,67 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5{
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://s6.postimg.org/vjnyp40a9/main_compressed.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("https://s6.postimg.org/px192htgx/1_compressed.jpg");
+    min-height: 400px;
+}
+.bgimg-3 {
+    background-image: url("https://s6.postimg.org/g5zbys5m9/photo2_min.jpg");
+    min-height: 400px;
+}
+.bgimg-4 {
+    background-image: url("https://s6.postimg.org/z8dnolab5/ganesh_min.jpg");
+    min-height: 400px;
+}
+
+/* Fifth image (Contact) */
+.bgimg-5 {
+    background-image: url("https://s6.postimg.org/anx304epd/8_compressed.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
+}
+
+/* Turn off parallax scrolling for tablets and mobiles */
+@media only screen and (max-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        background-attachment: scroll;
+    }
+}
+.pointerIcon{cursor:pointer;}
+#sub_Email{display: block;
+             margin : 0 auto;}
+.myIcon{font-size:28px !important;}
+.contactIcon{width:30px !important;}
+.myImages{height:163px !important;width:100% !important;}
+.myActivityImage{height:238px !important;}
+iframe {max-width:100%;}
+.Logo {width: 50px;}
