@@ -2,11 +2,19 @@
 <html>
 <title>CRH Mumbai</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="SHORTCUT ICON" href="https://s6.postimg.org/89smvryb5/crh_logo_google.jpg"/>
+<meta name="description" content="Housing Rights in India">
+<meta name="keywords" content="Housing Rights,Housing Rights in India,Housing Rights in Mumbai,Ghar Hak,CRH, Committee for the right to housing">
+<meta name="author" content="Rohit Nair">
+<meta property="og:title" content="Committee for the Right to Housing" />
+<meta property="og:description" content="A Human Rights based Organization" />
+<meta property="og:image" content="https://s6.postimg.org/89smvryb5/crh_logo_google.jpg" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<body onload="setTimeout(mySubscribe, 200)">
+<body onload="setTimeout(mySubscribe, 20000)">
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <ul class="w3-navbar" id="myNavbar">
@@ -432,7 +440,7 @@
   <form id="contact_Form">
       <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
         <div class="w3-half">
-          <input class="w3-input w3-border w3-hover-light-grey" id="Con_Name" name="Name" type="text" placeholder="Name" required>
+          <input class="w3-input w3-border w3-hover-light-grey" id="Con_Name" name="Name" type="text" placeholder="Name" title="How would you like to be addressed?" required>
         </div>
         <div class="w3-half">
           <input class="w3-input w3-border w3-hover-light-grey" id="Con_Email" name="Email" type="email" placeholder="Email" required>
@@ -462,7 +470,7 @@
       <h3 class="w3-container w3-dark-grey w3-hover-black">Subscribe</h3>
       <p class="w3-serif w3-large">Stay Connected by following CRHs Activities...<span class="w3-hide-large"><br></span> We won't spam you / share any of your details  <i class="fa fa-smile-o" aria-hidden="true"></i></p>
       <form id="subscribe_Form">
-     <p> <input type="email" id="sub_Email" name="Email" placeholder="Enter Your Email ID" style="max-width:80%; align-self: inherit;" class="w3-input w3-border w3-hover-light-grey w3-center" required/> </p>
+     <p> <input type="email" id="sub_Email" name="Email" placeholder="Enter Your Email ID" style="max-width:80%; align-self: inherit;" class="w3-input w3-border w3-hover-light-grey w3-center" aria-describedby="email-format" required aria-required=”true” title="Your Email Id"/> </p>
      <p> <button class="w3-btn w3-hover-red w3-ripple" type="submit" id="subscribe_Submit">Subscribe <i class="fa fa-heart-o"></i></button> </p>
      <span id="resultDisplay"><br></span>
      </form>
